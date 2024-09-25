@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h2, h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+#todoList, #doneList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px; /* Limit the width for better alignment */
+}
+
+#todoList li, #doneList li {
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todoList li button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todoList li button:hover {
+    background-color: #218838;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 130px); /* Adjust width to fit input and button */
+    max-width: 300px; /* Limit the width for better alignment */
+}
+
+button#submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button#submit:hover {
+    background-color: #0056b3;
+}
+
+div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
